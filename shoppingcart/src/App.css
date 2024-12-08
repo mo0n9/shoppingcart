@@ -1,0 +1,65 @@
+/* 기본 스타일 */
+.App {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  color: black;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* 다크모드 스타일 */
+.App.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.navbar.dark-mode {
+  background-color: #333333;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+}
+
+.links a:hover {
+  color: #ff6347;
+}
+
+/* 다크모드에서 링크 색상 */
+.navbar.dark-mode .links a {
+  color: white;
+}
+
+.dark-mode-toggle {
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #ff6347;
+  color: white;
+  border-color: #ff6347;
+}
